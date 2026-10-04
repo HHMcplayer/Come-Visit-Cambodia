@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: blanchedalmond;
+    color: aliceblue;
+}
+
+.nav {
+    padding: 15px;
+    background-color: antiquewhite;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.nav a {
+    padding: 5px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav a.active {
+    background-color: coral;
+}
+
+.banner {
+    padding: 15px;
+    background-color: beige;
+    height: 325px;
+    background-image: url(./banner1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    animation: slideshow 10s infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url(./banner1.jpg);
+    }
+
+    30% {
+        background-image: url(./banner2.jpg);
+    }
+
+    60% {
+        background-image: url(./banner3.jpg);
+    }
+
+    100% {
+        background-image: url(./banner4.jpg);
+    }
+}
+
+.intro {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px black;
+
+    animation: intro 10s infinite;
+}
+
+@keyframes intro {
+    0% {
+        color: yellow;
+        letter-spacing: 5px
+    }
+
+    30% {
+        color: greenyellow;
+        letter-spacing: 10px
+    }
+
+    60% {
+        color: white;
+        letter-spacing: 5px
+    }
+
+    100% {
+        color: #000;
+        letter-spacing: 10px
+    }
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 15px auto;
+    border: 10px solid whitesmoke
+}
+
+.profile {
+    padding: 15px;
+    background-color: gray;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px auto;
+    transition: all 500 ms;
+    animation: focus 5s infinite;
+}
+
+.profile img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+}
+
+@keyframes focus {
+    0% {
+        transform: scale(1);
+        background-color: gray;
+    }
+
+    100% {
+        transform: scale(1.2);
+        background-color: black;
+    }
+}
+
+.footer {
+    padding: 15px;
+    background-color: darkgrey;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Site Page */
+#popular-section {
+    padding: 15px;
+    background-color: darksalmon;
+}
+
+#rec-section {
+    padding: 15px;
+    background-color: burlywood;
+}
+
+.section-title {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 4px;
+    border-bottom: 5px solid black;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+.province {
+    padding: 15px;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 15px;
+}
+
+.province ol {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.gallery img {
+    width: 225px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 500 ms;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+}
+
+/* Food Page */
+#famous-food {
+    padding: 15px;
+    background-color: burlywood;
+}
+
+.food-wrapper {
+    padding: 15px;
+    background-color: beige;
+
+}
+
+.food {
+    padding: 15px;
+    background-color: chocolate;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+
+    display: inline-block;
+    margin: 15px;
+}
+
+.food img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+th,
+td {
+    color: black;
+}
+
+th,
+td {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+table img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+h4,
+p,
+ol {
+    color: #000;
+}
+
+table tr:nth-child(1) {
+    background-color: darkorange;
+    height: 50px;
+}
+
+/* Culture Page */
+.culture-wrapper {
+    padding: 15px;
+    background-color: chocolate;
+}
+
+.culture-card {
+    padding: 15px;
+    background-color: lightseagreen;
+    height: 300px;
+    text-align: center;
+}
+
+.culture-img {
+    padding: 15px;
+    background-color: brown;
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.culture-desc {
+    padding: 15px;
+    background-color: salmon;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.culture-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
